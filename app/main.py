@@ -22,7 +22,6 @@ app.include_router(users.router)
 
 def write_log(message: str):
     with open("log.txt", mode="a") as log:
-        sleep(10)
         log.write(message)
 
 
